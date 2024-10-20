@@ -1,0 +1,20 @@
+# Este es el archivo de configuración de mods para Forge. Define los metadatos del mod.
+
+modLoader="javafml"  # Especifica el mod loader de Forge
+loaderVersion="[47,)"  # Define la versión de Forge. 47 es para Minecraft 1.20.1
+license="MIT"  # Licencia del mod, puedes cambiarla si deseas
+[[mods]]
+modId="mywaterwalkingmod"  # Mod ID, debe coincidir con lo que tienes en tu clase principal
+version="2.0"  # Versión de tu mod
+displayName="My Water Walking Mod"  # Nombre del mod que aparecerá en el juego
+description='''
+Este mod permite caminar sobre el agua activando la capacidad de volar mientras estás encima de bloques de agua.
+'''  # Descripción del mod
+
+# Dependencias opcionales
+[[dependencies.mywaterwalkingmod]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"  # Puede ser "BOTH", "CLIENT" o "SERVER"
